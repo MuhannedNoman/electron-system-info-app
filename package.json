@@ -1,21 +1,12 @@
 {
-  "name": "electron-quick-start",
+  "name": "system-info",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "An application to display system info",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
   },
-  "repository": "https://github.com/electron/electron-quick-start",
-  "keywords": [
-    "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
-  ],
-  "author": "GitHub",
-  "license": "CC0-1.0",
+  "author": "Muhanned Noman",
   "devDependencies": {
     "electron": "^8.2.3"
   }
