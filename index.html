@@ -7,15 +7,32 @@
     <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <title>Hello World!</title>
+    <title>System Info</title>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
+    <div class="container">
+      <h1>System Info App</h1>
+      <div id="output">
 
+      </div>
+    </div>
+
+
+
+    <!-- We are using Node.js <span id="node-version"></span>,
+    Chromium <span id="chrome-version"></span>,
+    and Electron <span id="electron-version"></span>. -->
     <!-- You can also require other files to run in this process -->
     <script src="./renderer.js"></script>
   </body>
+  <script>
+    let output = `
+    <h2 class="page-header">App Version Data</h2>
+    <ul class="list-group">
+      <li class="list-group-item">Node: ${process.version.node} </li>
+    </ul>
+    `
+
+    document.getElementById('output').innerHTML = output
+  </script>
 </html>
