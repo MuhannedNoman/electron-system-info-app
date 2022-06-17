@@ -8,6 +8,6 @@
   },
   "author": "Muhanned Noman",
   "devDependencies": {
-    "electron": "^8.5.2"
+    "electron": "^15.5.5"
   }
 }
